@@ -6,3 +6,4 @@ Strating point for any Wordpress pluging
    Dzięki temu możliwe stało się INSERT INTO ... ON DUPLICATE KEY UPDATE ...
    Rozwiązanie to zapewnia unikalność dodawanych treści oraz poprawną aktualizację wiersz w/w tabeli.
 - Wtyczka instaluje się w WPA > Ustawienia > Złota myśl.
+- W polu **Twoja nazwa** ustawiasz tekst zastępczy (ang. shortcode) którego użycie spowoduje wyświetlenie treści użytej w polu **Twoja zawartość**.
