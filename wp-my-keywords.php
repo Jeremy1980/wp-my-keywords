@@ -37,8 +37,9 @@ class MyKeywords {
     add_action('admin_menu', [$this, 'add_plugin_options_page']);
     add_action('admin_init', [$this, 'add_plugin_settings']);
 
-	if (is_string($this->content['shortcode']))
-    add_shortcode($this->content['shortcode'], [$this, 'my_keyword_content']); 
+    $shortcode = $this->content['shortcode'] ?? null;
+    if (is_string($shortcode))
+      add_shortcode($shortcode, [$this, 'my_keyword_content']); 
   }
 
   // Add our plugin's option page to the WP admin menu.
@@ -98,7 +99,7 @@ class MyKeywords {
 
   // Render content for our plugin's section.
   public function render_section() {
-    print '';
+    print 'W polu <u>Twoja nazwa</u> ustawiasz tekst zastępczy (ang. shortcode), którego użycie spowoduje wyświetlenie treści użytej w polu <u>Twoja zawartość</u>.';
   }  
 
   // Render the field.
